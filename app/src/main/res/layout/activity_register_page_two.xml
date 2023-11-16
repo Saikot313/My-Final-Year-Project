@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/peak"
+    tools:context=".Register_Page_Two">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/second_custom_shape"
+        android:backgroundTint="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B Safe"
+            android:textColor="@color/white"
+            android:textAlignment="viewEnd"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:textSize="50sp"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Welcome\nPlease enter your information to create your profile"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="15sp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_person_two"
+        android:hint="Frist Name"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:drawablePadding="3dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/et_shape"
+        android:textCursorDrawable="@drawable/custome_cursor_color"
+        android:layout_gravity="center"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Last Name"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textColorHint="@color/white"
+        android:textCursorDrawable="@drawable/custome_cursor_color"
+        android:drawableLeft="@drawable/ic_person_two"
+        android:drawablePadding="3dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/et_shape"
+        android:layout_gravity="center"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <EditText
+        android:id="@+id/EditText1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:textCursorDrawable="@drawable/custome_cursor_color"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:hint="Enter The Password"
+        android:drawablePadding="3dp"
+        android:password="true"
+        android:textSize="15sp"
+        android:textColorHint="@color/white"
+        android:background="@drawable/et_shape"
+        android:layout_gravity="center"/>
+    
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show your Password"
+        android:textColor="@color/white"
+        android:theme="@style/Theme.MaterialComponents"
+        android:layout_marginLeft="60dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <EditText
+        android:id="@+id/EditText2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:textCursorDrawable="@drawable/custome_cursor_color"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:hint="Re-type Password"
+        android:drawablePadding="3dp"
+        android:password="true"
+        android:textSize="15sp"
+        android:textColorHint="@color/white"
+        android:background="@drawable/et_shape"
+        android:layout_gravity="center"/>
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show your Password"
+        android:layout_marginTop="8dp"
+        android:theme="@style/Theme.MaterialComponents"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round_bg"
+        android:text="Next"
+        android:paddingRight="10dp"
+        android:paddingLeft="30dp"
+        android:drawableRight="@drawable/arrow_circle_right"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gotoRegister"/>
+</LinearLayout>
